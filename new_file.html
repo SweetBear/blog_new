@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="UTF-8"></script>
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		h2 {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		
+		.tag-cloud {
+			width: 300px;
+			height: auto;
+			padding: 10px;
+			margin: 10px auto;
+			/*background-color: #BBBBBB;*/
+		}
+		
+		.hot-tag-cloud {
+			color: #fff;
+			display: inline-block;
+			padding: 4px 10px;
+			border-radius: 3px;
+			margin-bottom: 8px;
+			margin-right: 8px;
+			text-decoration: none;
+			transition: all .3s;
+			cursor: pointer;
+		}
+		
+		.hot-tag-cloud:hover {
+			background-color: #4a4a4a !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="tag-cloud"></div>
+	
+	<script src="js/tag-cloud.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			//标签云数据
+			var data = [
+				{
+					"name": "电脑办公",
+					"value": 8,
+					"data": {} //可以增加额外的数据，当点击该标签时会返回这个数据
+				},{
+					"name": "贷款申请",
+					"value": 8
+				},{
+					"name": "贷款驳回",
+					"value": 18
+				},{
+					"name": "贷款放款",
+					"value": 8
+				},{
+					"name": "个护化妆",
+					"value": 8
+				},{
+					"name": "生活电器",
+					"value": 8
+				},{
+					"name": "理财",
+					"value": 12
+				},{
+					"name": "高消费",
+					"value": 8
+				},{
+					"name": "数码/影像",
+					"value": 8
+				},{
+					"name": "网购",
+					"value": 8
+				},{
+					"name": "租车",
+					"value": 8
+				},{
+					"name": "手机通讯",
+					"value": 21
+				},{
+					"name": "休闲娱乐",
+					"value": 8
+				},{
+					"name": "电脑办公",
+					"value": 8
+				},{
+					"name": "美食达人",
+					"value": 8
+				},{
+					"name": "教育培训",
+					"value": 8
+				},{
+					"name": "箱包配饰",
+					"value": 8
+				}
+			];
+			//标签云配置信息
+			var cfg = {
+					"className": "hot-tag-cloud", //自定义的标签样式
+					"colors": ["#66CC99", "#3399CC", "#FF99CC" ,"#CC9933", "#666600"], //自定义的标签调色板
+					"tagMinSize": 10, //自定义的标签最小像素
+					"tagMaxSize": 30, //自定义的标签最大像素
+					"tagClick": {}, //自定义标签的点击事件
+					"tagDblClick": tagDblClick //自定义标签的双击事件
+				};
+			
+			$(".tag-cloud").createTagCloud(data, cfg, callBack);
+			//$(".tag-cloud").createTagCloud(data, {}, callBack);
+		});
+		
+		function callBack(){
+			console.log("callBack");
+		}
+		
+		function tagClick(tag){
+			console.log(tag);
+			console.log("click");
+		}
+		
+		function tagDblClick(tag){
+			console.log(tag);
+			console.log("dblclick");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #EFEFEF;	
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.header {
+	height: 100px;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.header-left {
+	width: 549px;
+	height: 100px;
+	float: left;
+}
+
+.header-right {
+	width: 549px;
+	height: 100px;
+	float: right;
+	background-color: palevioletred;
+}
+
+.blog-logo {
+	height: 50px;
+	margin-top: 25px;
+}
+
+.blog-desc p {
+	margin-top: -10px;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #2B2B2B;
+}
+
+.nav {
+	height: 50px;
+	width: 100%;
+	background-color: #393D49;
+}
+
+.nav-container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.nav-container li {
+	list-style-type: none;
+	width: 120px;
+	float: left;
+}
+
+.nav-container li a {
+	display: block;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight:800;
+	color: #C4C5C8;
+	text-align: center;
+}
+
+.nav-container li a:hover {
+	background-color: #6C747E;
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 5px solid #5FB878;
+}
+
+.search {
+	float: right;
+	line-height: 50px;
+}
+
+.flexsearch-form {
+	overflow: hidden;
+	position: relative;
+}
+
+
+.flexsearch-input {
+	height: 30px;
+	border-radius: 20px;
+	color: #333;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 15px;
+	border: 0;
+}
+
+.flexsearch-submit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 40px;
+	height: 50px;
+	border: none;
+	background: transparent;
+	color: #888;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 20px;
+}
+
+input::-webkit-search-cancel-button{
+  display: none;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+input:-moz-placeholder {
+	color: #888;
+	/*padding-left:10px;*/
+}
+
+
+/* ui-banner */
+.ui-banner{display:block;position:relative;width:1100px;}
+.ui-banner.ui-banner-invalid{display:none;}
+.ui-banner,.ui-banner .ui-banner-slides,.ui-banner .ui-banner-slogans,.ui-banner .ui-banner-arrow{height:298px;}
+.ui-banner .ui-banner-slides,.ui-banner .ui-banner-slogans,.ui-banner .ui-banner-arrow{position:absolute;top:0;}
+.ui-banner ul{list-style-type:none;margin:0;padding:0;overflow:hidden;}
+.ui-banner .ui-banner-slides{width:445px;height:298px;left:1px;}
+.ui-banner .ui-banner-slides li{display:none;position:absolute;top: 5px;+top:10px;}
+.ui-banner .ui-banner-slides li img{width:445px;height:288px;border:none;}
+.ui-banner .ui-banner-slides li.ui-banner-slides-current,.ui-banner .ui-banner-slides li.ui-banner-slides-prev,.ui-banner .ui-banner-slides li.ui-banner-slides-next{display:block;}
+.ui-banner .ui-banner-slides li.ui-banner-slides-current{left:0;}
+.ui-banner .ui-banner-slides li.ui-banner-slides-prev{left:-654px;}
+.ui-banner .ui-banner-slides li.ui-banner-slides-next{left:654px;}
+.ui-banner .ui-banner-slogans{height:298px;overflow:hidden;width:644px;right:0;}
+.ui-bnnerimg{
+	width: 103px;
+	height: 83px;
+}
+.ui-bnnerp{
+	width: 496px;
+	height:97%;
+	padding-left: 20px;
+}
+.ui-bnnerp h3{
+	font-size: 14px;
+	color: #666;
+}
+.ui-bnnerp p{
+	color: #666;
+}
+.ui-line{
+	zoom: 1;
+	overflow: hidden;
+}
+.ui-line-hover{
+	background:url("../img/stuj.png") no-repeat left center;
+}
+
+.ullinehover{
+	border-bottom: 1px solid #ececec;
+	height: 86px;
+	margin: 0 0 3px 25px;
+	+margin: 0 0 1px 25px;
+	padding: 6px 0;
+}
+
+.ui-bnnerp-hover{
+	background-color:#9b040d;
+	color:#fff;
+}
+/*.ullinehover:hover .ui-bnnerp h3,.ullinehover:hover .ui-bnnerp p{
+	color: #fff;
+}*/
+.uibannerslog ul li{
+	border: 1px solid red;
+}
+.ui-bnnerp-hover h3,.ui-bnnerp-hover p{
+	color:#fff;
+}
+.ui-banner .ui-banner-arrow{display:block;width:23px;outline:none;}
+.ui-banner .ui-banner-arrow.ui-banner-arrow-prev{
+	background: transparent url("../img/jleft.jpg") no-repeat scroll 0 0;
+	height: 23px;
+	right: -43px;
+	top: 17px;
+	width: 23px;
+}
+.ui-banner .ui-banner-arrow.ui-banner-arrow-next{
+	background: transparent url("../img/jright.jpg") no-repeat;
+	height: 23px;
+	right: -43px;
+	top: 49px;
+	width: 23px;
+}
+.ui-banner .ui-banner-arrow.ui-banner-arrow-next img{left:-15px;}
+.ui-banner .ui-banner-overlay{bottom:0;height:10px;position:absolute;right:0;width:173px;}
+
+
+/*main-content*/
+.main-content{
+	margin:0 auto;
+	width:1100px;
+	overflow:hidden;
+}
+
+.content-left{
+	width:74%;
+	float:left;
+}
+.content-header{
+	width:100%;
+	height:30px;
+	border-left: 2px solid #3472EF;
+}
+.content-header h1{
+	line-height: 30px;
+	margin-left:10px;
+	font-size:18px;
+	color:#333333;
+	font-family: "微软雅黑";
+	font-weight: 500;
+}
+
+.article-main{
+	margin-bottom:10px;
+	margin-top:5px;
+	background-color: #FFFFFF;
+	width:100%;
+	height:180px;
+}
+
+.article-main img{
+	margin-top:18px;
+	margin-left:20px;
+	width:215px;
+	height:144px;
+}
+.article{
+	width:565px;
+	height:140px;
+	margin-top:22px;
+	float:right;
+}
+.article-title{
+	height:30px;
+}
+.article-title h1{
+	line-height: 30px;
+	font-weight: 800;
+	font-size: 18px;
+	font-family: "微软雅黑","宋体";
+}
+.acticle-desc{
+	margin:0px;
+	width:100%;
+	height:33px;
+}
+.acticle-desc img{
+	margin: 0;
+	width:33px;
+	height:33px;
+	float:left;
+}
+.acticle-desc span{
+	height:33px;
+	line-height: 33px;
+	display:block;
+	float:left;
+	margin-left:10px;
+	color:#919898;
+}
+.acticle-content{
+	width:550px;
+	margin-top:5px;
+}
+.acticle-content p{
+	color:#626563;
+	
+}
+
+.blog-desc-content{
+	margin-top:15px;
+	width:100%;
+	background-color: white;
+}
+.blog-desc-content p{
+	font-size: 14px;
+	padding: 5px;
+}
+.contact-way{
+	height:50px;
+	margin:0px 0 10px 0;
+}
+.contact-way ul{
+	margin-top:5px;
+	margin-left:10px;
+}
+.contact-way ul li{
+	float: left;
+	margin-left: 15px;
+	
+}
+
+.weixin-size{
+	margin-top:-3px;
+	width:45px;
+	height:45px;
+}
+.qq-size{
+	width:40px;
+	height:40px;
+}
+.weibo-size{
+	width:40px;
+	height:40px;
+}
+.github-size{
+	margin-top:-15px;
+	margin-left:-10px;
+	width:68px;
+	height:68px;
+}
+.content-right{
+	width:24%;
+	height:800px;
+	float:right;
+}
+
+.tag-cloud-main{
+	margin-top:20px;
+}
+.tag-cloud{
+	background-color:#fff;
+	padding:10px 10px 10px 10px;
+	margin-top:5px;
+}
+.hot-tag-cloud {
+	color: #fff;
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 3px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	text-decoration: none;
+	transition: all .3s;
+	cursor: pointer;
+}
+		
+.hot-tag-cloud:hover {
+	background-color: #4a4a4a !important;
+}
+
+.footer{
+	width:100%;
+	height:30px;
+	background-color: #393D49;
+	bottom: 0px;
+	text-align:center;
+}
+.footer p{
+	height:30px;
+	line-height:30px;
+	font-size: 12px;
+}
