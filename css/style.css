@@ -357,6 +357,92 @@ input:-moz-placeholder {
 	background-color: #4a4a4a !important;
 }
 
+.new-comment{
+	margin-top:20px;
+}
+.comment-main{
+	background-color: #fff;
+}
+
+.comment{
+	margin-top:5px;
+	width:100%;
+	overflow: hidden;
+	border-bottom: 1px dashed #6C747E;
+	padding-bottom: 5px;
+}
+.comment-main .comment:nth-child(5){
+	padding-bottom: 10px;
+	border: 0px;
+}
+.author-img{
+	float:left;
+	width:20%;
+	height:100%;
+}
+.author-img img{
+	width:40px;
+	height:40px;
+	margin-left:8px;
+	margin-top:3px;
+	border-radius: 25px;
+}
+.comment-right{
+	width:80%;
+	float:right;
+}
+.comment-author-name{
+	height: 25px;
+	width:100%;
+}
+.comment-author-name span:nth-child(1){
+	color:#4D9DEE;
+	margin-left:5px;
+	line-height:25px;
+	font-size:12px;
+}
+.comment-author-name span:nth-child(2){
+	float:right;
+	margin-right: 5px;
+	line-height:25px;
+	color:#767575;
+}
+.comment-content{
+	width:96%;
+	margin-left:5px;
+	margin-bottom: 5px;
+	
+}
+.comment-content p{
+	font-size:12px;
+	line-height: 16px;
+}
+.friend-link{
+	margin-top:20px;
+}
+.link-content{
+	padding: 10px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.link-content ul{
+	margin-left:30px;
+	width:100%;
+}
+.link-content ul li{
+	padding-top:10px;
+	float:left;
+	width:50%;
+}
+.link-content ul li a{
+	font-size: 14px;
+	text-decoration: none;
+	color:#767575;
+}
+.link-content ul li a:hover{
+	color:#000;
+	font-weight: 500;
+}
 .footer{
 	width:100%;
 	height:30px;
